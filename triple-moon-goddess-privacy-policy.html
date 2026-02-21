@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Triple Moon Goddess</title>
+  <style>
+    :root {
+      --bg: #0a0a0f;
+      --surface: #13131d;
+      --border: #2a2a3d;
+      --accent: #9b72cf;
+      --accent-soft: #c4a0e8;
+      --text: #e8e0f0;
+      --muted: #9088a8;
+      --highlight-bg: #1a1628;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      font-size: 16px;
+      line-height: 1.75;
+      padding: 2rem 1rem 4rem;
+    }
+
+    .wrapper {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .policy-header {
+      text-align: center;
+      padding: 2.5rem 1rem 2rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+
+    .policy-header .moon {
+      font-size: 2.2rem;
+      letter-spacing: 0.3em;
+      margin-bottom: 0.5rem;
+      color: var(--accent-soft);
+    }
+
+    .policy-header h1 {
+      font-size: 1.6rem;
+      font-weight: normal;
+      color: var(--accent-soft);
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+    }
+
+    .meta {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      font-family: 'Courier New', monospace;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    .meta span { white-space: nowrap; }
+
+    /* Sections */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.05rem;
+      font-weight: normal;
+      color: var(--accent-soft);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.2rem;
+    }
+
+    h3 {
+      font-size: 0.95rem;
+      color: var(--accent-soft);
+      margin: 1.4rem 0 0.5rem;
+      font-weight: bold;
+    }
+
+    p { margin-bottom: 1rem; color: var(--text); }
+
+    /* Callout boxes */
+    .callout {
+      background: var(--highlight-bg);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 6px 6px 0;
+      padding: 0.9rem 1.2rem;
+      margin: 1rem 0;
+      font-size: 0.93rem;
+      color: var(--muted);
+    }
+
+    .callout strong { color: var(--accent-soft); }
+
+    /* Never-do list */
+    .never-list {
+      list-style: none;
+      padding: 0;
+      margin: 0.5rem 0 1rem;
+    }
+
+    .never-list li {
+      padding: 0.35rem 0 0.35rem 1.8rem;
+      position: relative;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+
+    .never-list li::before {
+      content: '✗';
+      position: absolute;
+      left: 0;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    /* Processor cards */
+    .processor-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .processor-card .processor-name {
+      font-weight: bold;
+      color: var(--accent-soft);
+      margin-bottom: 0.3rem;
+      font-size: 0.95rem;
+    }
+
+    .processor-card p { margin-bottom: 0.4rem; font-size: 0.9rem; }
+
+    .processor-card a {
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-family: 'Courier New', monospace;
+      text-decoration: none;
+    }
+
+    .processor-card a:hover { text-decoration: underline; }
+
+    /* Rights table */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 0;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 1rem;
+      font-size: 0.9rem;
+    }
+
+    .rights-grid .cell {
+      padding: 0.6rem 0.9rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .rights-grid .cell:nth-child(odd) {
+      background: var(--surface);
+      color: var(--accent-soft);
+      font-weight: bold;
+      border-right: 1px solid var(--border);
+    }
+
+    .rights-grid .cell:nth-child(even) {
+      background: var(--bg);
+    }
+
+    .rights-grid .cell:last-child,
+    .rights-grid .cell:nth-last-child(2) {
+      border-bottom: none;
+    }
+
+    /* Data table */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      margin-bottom: 1rem;
+    }
+
+    .data-table th {
+      background: var(--surface);
+      color: var(--accent-soft);
+      padding: 0.6rem 0.8rem;
+      text-align: left;
+      border: 1px solid var(--border);
+      font-weight: normal;
+      letter-spacing: 0.04em;
+    }
+
+    .data-table td {
+      padding: 0.5rem 0.8rem;
+      border: 1px solid var(--border);
+      vertical-align: top;
+      color: var(--text);
+    }
+
+    .data-table tr:nth-child(even) td { background: var(--surface); }
+
+    /* Footer */
+    .policy-footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.82rem;
+      font-family: 'Courier New', monospace;
+    }
+
+    .policy-footer a { color: var(--accent); text-decoration: none; }
+    .policy-footer a:hover { text-decoration: underline; }
+
+    /* Responsive */
+    @media (max-width: 540px) {
+      .rights-grid { grid-template-columns: 1fr; }
+      .rights-grid .cell:nth-child(odd) { border-right: none; border-bottom: 0; }
+      .rights-grid .cell:nth-child(even) { border-bottom: 1px solid var(--border); }
+    }
+  </style>
+</head>
+<body>
+<div class="wrapper">
+
+  <header class="policy-header">
+    <div class="moon">☽ ☾</div>
+    <h1>Triple Moon Goddess &mdash; Privacy Policy</h1>
+    <div class="meta">
+      <span>Effective: January 2025</span>
+      <span>Version: 2025-01</span>
+      <span>Last Reviewed: February 2026</span>
+    </div>
+  </header>
+
+  <!-- 1. Who We Are -->
+  <section id="who-we-are">
+    <h2>1. Who We Are</h2>
+    <p>Triple Moon Goddess is a wellness journaling and medical astrology application operated by <strong>Lisa</strong> ("we", "us", "our"). For all data protection enquiries, please contact:</p>
+    <p>
+      Email: <a href="mailto:Lisa@TripleMoonGoddess.com" style="color:var(--accent);">Lisa@TripleMoonGoddess.com</a><br/>
+      Website: <a href="https://triplemoongoddess.com" style="color:var(--accent);" target="_blank" rel="noopener">triplemoongoddess.com</a>
+    </p>
+    <div class="callout">
+      We are a sole operator and do not currently have a designated Data Protection Officer (DPO). If you are in the EU/EEA and your enquiry is unresolved, you have the right to lodge a complaint with your local supervisory authority.
+    </div>
+  </section>
+
+  <!-- 2. Who This Applies To -->
+  <section id="scope">
+    <h2>2. Who This Policy Applies To</h2>
+    <p>This policy applies to all users of the Triple Moon Goddess journal application (PWA), the natal chart generator, the phone widget application, and any associated email communications.</p>
+    <p>This policy applies to users worldwide. Where additional rights apply in your jurisdiction — EU/EEA/UK (GDPR), California (CCPA), Brazil (LGPD), Canada (PIPEDA), Australia (Privacy Act) — those rights are addressed in Section 11.</p>
+  </section>
+
+  <!-- 3. What Data We Collect -->
+  <section id="data-collected">
+    <h2>3. What Data We Collect</h2>
+
+    <h3>3.1 Identity &amp; Contact Data</h3>
+    <p>Collected only if you voluntarily provide it:</p>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>First name or nickname</td><td>Stored separately from health data</td></tr>
+        <tr><td>Email address</td><td>Account lookup, chart delivery, reminders only</td></tr>
+        <tr><td>Birth date, time &amp; location</td><td>Natal chart generation</td></tr>
+      </tbody>
+    </table>
+    <div class="callout">
+      <strong>Separation guarantee:</strong> Your name/email are stored in a separate Firestore collection (<code>user_identities</code>) from your health records. No single database document contains both your identity and your health data.
+    </div>
+
+    <h3>3.2 Health &amp; Wellness Data (Special Category)</h3>
+    <p>This is health data under GDPR Article 9. It includes daily body scores (mood, energy, optimism, physical/mental stamina), sleep data, symptoms, medication and supplement logs, food and beverage log, tongue observations (Traditional Chinese Medicine), personal notes and reflections, and astrology transit journal responses.</p>
+
+    <h3>3.3 Technical &amp; Device Data</h3>
+    <p>Anonymous Firebase Authentication UID, FCM push notification tokens, app preferences (tab config, reminder times, food plan, house system), timezone, and rate-limit counters keyed by anonymous UID.</p>
+
+    <h3>3.4 Usage Data</h3>
+    <p>We use Firebase (Google) infrastructure. Firebase collects basic performance and crash data per its own terms. We do not use Google Analytics, Facebook Pixel, any advertising trackers, session replay tools, or heatmap software.</p>
+  </section>
+
+  <!-- 4. How We Use Your Data -->
+  <section id="use">
+    <h2>4. How We Use Your Data &amp; Legal Basis</h2>
+
+    <h3>4.1 Necessary Processing</h3>
+    <p>Legal basis: Legitimate interests / Contract (GDPR Art 6(1)(b) and (f)) — providing app functionality, authentication, push notifications, email reminders, and rate limiting.</p>
+
+    <h3>4.2 Health Data Processing</h3>
+    <p>Legal basis: Explicit consent (GDPR Art 9(2)(a)) — storing/displaying journal entries, generating PDF exports, enabling Practitioner Mode. You may withdraw consent at any time via <strong>Settings → Danger Zone</strong>.</p>
+
+    <h3>4.3 AI Summary Processing</h3>
+    <p>Legal basis: Explicit consent (GDPR Art 6(1)(a) and Art 9(2)(a)). When you choose to generate a daily AI summary, your journal data for that day is sent to Anthropic's API. This is entirely optional — you choose each time you tap the button. Declining does not affect any other functionality.</p>
+
+    <h3>4.4 What We Never Do</h3>
+    <ul class="never-list">
+      <li>Sell your personal data</li>
+      <li>Share your data with advertisers</li>
+      <li>Use your health data to train AI models</li>
+      <li>Combine your identity with your health records in a single document</li>
+    </ul>
+  </section>
+
+  <!-- 5. Third-Party Processors -->
+  <section id="processors">
+    <h2>5. Third-Party Processors</h2>
+
+    <div class="processor-card">
+      <div class="processor-name">Google Firebase (Alphabet Inc.)</div>
+      <p>Provides database, authentication, hosting, and cloud functions. Stores all Firestore data, authentication UIDs, and push tokens across US and EU data centres.</p>
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a>
+    </div>
+
+    <div class="processor-card">
+      <div class="processor-name">Anthropic, PBC</div>
+      <p>Provides the Claude AI API for optional daily journal summaries. Data sent: journal entry data for the day (health scores, food, symptoms, notes, astrology context). No name, email, or access code is included. API data is not used to train models without consent.</p>
+      <a href="https://www.anthropic.com/privacy" target="_blank" rel="noopener">anthropic.com/privacy</a>
+    </div>
+
+    <div class="processor-card">
+      <div class="processor-name">Railway (Railway Corp.)</div>
+      <p>Hosts our Swiss Ephemeris calculation API for astrological positions. Data sent: birth date, time, and location — not linked to your identity.</p>
+      <a href="https://railway.app/legal/privacy" target="_blank" rel="noopener">railway.app/legal/privacy</a>
+    </div>
+
+    <div class="processor-card">
+      <div class="processor-name">Google Workspace / Gmail &amp; Google Drive</div>
+      <p>Used for sending reminder emails and PDF delivery. If Practitioner Mode is enabled, you create and share a Google Drive folder with your practitioner. Google's standard privacy terms apply to that folder.</p>
+    </div>
+  </section>
+
+  <!-- 6. International Transfers -->
+  <section id="transfers">
+    <h2>6. International Data Transfers</h2>
+    <p>Our primary infrastructure is based in the United States. EU/EEA/UK transfers are covered by Standard Contractual Clauses (SCCs) and, for Firebase, participation in the EU-US Data Privacy Framework. You may request a copy of the relevant transfer mechanisms by emailing <a href="mailto:Lisa@TripleMoonGoddess.com" style="color:var(--accent);">Lisa@TripleMoonGoddess.com</a>.</p>
+  </section>
+
+  <!-- 7. Data Retention -->
+  <section id="retention">
+    <h2>7. Data Retention</h2>
+    <table class="data-table">
+      <thead><tr><th>Data Type</th><th>Retention Period</th></tr></thead>
+      <tbody>
+        <tr><td>Journal entries &amp; health data</td><td>Indefinitely until you delete via Settings → Danger Zone</td></tr>
+        <tr><td>Identity data (name/email)</td><td>Until deletion request or chart deletion</td></tr>
+        <tr><td>Notification log</td><td>Auto-deleted after 3 days</td></tr>
+        <tr><td>AI rate limit counters</td><td>Expire naturally as new days begin (keyed by date)</td></tr>
+        <tr><td>FCM push tokens</td><td>Until push disabled or token becomes invalid</td></tr>
+        <tr><td>Email queue</td><td>Processed immediately; not retained after delivery</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 8. Security -->
+  <section id="security">
+    <h2>8. Security Measures</h2>
+    <p>All data transmitted over HTTPS (TLS 1.2+). Data encrypted at rest via Firebase/Firestore encryption. API keys stored in Google Cloud Secret Manager — never in code. Firebase Security Rules restrict database access to each authenticated user's own data. Admin portal restricted to a single authorised account. Health data and identity data are physically separated in distinct Firestore collections; no single record contains both.</p>
+    <div class="callout">No security system is 100% impenetrable. If you believe your data has been compromised, contact <strong>Lisa@TripleMoonGoddess.com</strong> immediately.</div>
+  </section>
+
+  <!-- 9. Cookies -->
+  <section id="cookies">
+    <h2>9. Cookies and Local Storage</h2>
+    <p>We do not use advertising cookies or tracking pixels. We use browser local storage only for: storing your access code (session continuity), recording your consent decision and timestamp, caching your Firebase authentication session, and storing widget email preference (phone widget only). These are strictly necessary for app function. No third-party tracking cookies are used.</p>
+  </section>
+
+  <!-- 10. Children -->
+  <section id="children">
+    <h2>10. Children's Privacy</h2>
+    <p>This application is intended for adults aged 18 and over. We do not knowingly collect personal data from children under 13 (or under 16 in the EU/EEA). If you believe a child has submitted data to us, please contact <a href="mailto:Lisa@TripleMoonGoddess.com" style="color:var(--accent);">Lisa@TripleMoonGoddess.com</a> and we will delete it immediately.</p>
+  </section>
+
+  <!-- 11. Your Rights -->
+  <section id="rights">
+    <h2>11. Your Rights</h2>
+
+    <h3>All Users</h3>
+    <p>Right to be informed (fulfilled by this policy), right to delete data (Settings → Danger Zone), right to withdraw consent at any time.</p>
+
+    <h3>EU / EEA / UK (GDPR / UK GDPR)</h3>
+    <div class="rights-grid">
+      <div class="cell">Art 15 – Access</div><div class="cell">Request a copy of your data</div>
+      <div class="cell">Art 16 – Rectification</div><div class="cell">Correct inaccurate data</div>
+      <div class="cell">Art 17 – Erasure</div><div class="cell">"Right to be forgotten"</div>
+      <div class="cell">Art 18 – Restriction</div><div class="cell">Limit how we process your data</div>
+      <div class="cell">Art 20 – Portability</div><div class="cell">Receive your data in machine-readable format</div>
+      <div class="cell">Art 21 – Object</div><div class="cell">Object to processing based on legitimate interests</div>
+      <div class="cell">Art 22 – Automated decisions</div><div class="cell">We do not make automated decisions with legal effect</div>
+    </div>
+
+    <h3>California (CCPA / CPRA)</h3>
+    <p>Right to know, right to delete, right to opt out of sale (we do not sell data), right to non-discrimination, and right to correct inaccurate personal information. Categories collected: identifiers, health/medical information, internet/electronic activity (Firebase analytics). Sold/shared: No.</p>
+
+    <h3>Brazil (LGPD), Canada (PIPEDA), Australia (Privacy Act)</h3>
+    <p>Users in these jurisdictions have equivalent rights to access, correction, anonymisation, portability, and deletion. Contact <a href="mailto:Lisa@TripleMoonGoddess.com" style="color:var(--accent);">Lisa@TripleMoonGoddess.com</a>. Australian users may also escalate to the OAIC.</p>
+
+    <div class="callout">To exercise any of these rights, email <strong>Lisa@TripleMoonGoddess.com</strong>. We will respond within 30 days.</div>
+  </section>
+
+  <!-- 12. Practitioner -->
+  <section id="practitioner">
+    <h2>12. Practitioner Relationship</h2>
+    <p>If Practitioner Mode is enabled, Lisa can view your journal entries through a secure admin portal. No additional data is shared — the same access code links your data to practitioner access. You can see whether practitioner access is enabled in Settings. Your practitioner is bound by professional confidentiality obligations.</p>
+    <p>Shared Google Drive folders for tongue photos and consultation notes are governed by Google's privacy terms and the access you configure on that folder.</p>
+  </section>
+
+  <!-- 13. Changes -->
+  <section id="changes">
+    <h2>13. Changes to This Policy</h2>
+    <p>We will update this policy when our data practices change. Material changes will be communicated via an updated notice on the consent screen within the app and an updated effective date at the top of this document. Continued use of the app after a material change constitutes acceptance. Where legally required, we will re-obtain explicit consent.</p>
+  </section>
+
+  <!-- 14. Contact -->
+  <section id="contact">
+    <h2>14. Contact &amp; Complaints</h2>
+    <p>For any privacy-related question, data request, or complaint:</p>
+    <p><strong>Email:</strong> <a href="mailto:Lisa@TripleMoonGoddess.com" style="color:var(--accent);">Lisa@TripleMoonGoddess.com</a></p>
+    <p>We will respond within 30 days. If you are not satisfied with our response, you have the right to escalate to your local data protection authority:</p>
+    <p>EU/EEA: your national supervisory authority (ICO in UK, CNIL in France, BfDI in Germany) &bull; California: California Privacy Protection Agency (CPPA) &bull; Australia: Office of the Australian Information Commissioner (OAIC)</p>
+  </section>
+
+  <footer class="policy-footer">
+    <p>Triple Moon Goddess &bull; <a href="https://triplemoongoddess.com" target="_blank" rel="noopener">triplemoongoddess.com</a> &bull; <a href="mailto:Lisa@TripleMoonGoddess.com">Lisa@TripleMoonGoddess.com</a></p>
+    <p style="margin-top:0.5rem;">Privacy Policy v2025-01 &bull; Last reviewed February 2026</p>
+  </footer>
+
+</div>
+</body>
+</html>
